@@ -1,0 +1,412 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Tada &amp; Blog
+  </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    .nav-link {
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #424242 !important;
+    }
+    .nav-link:hover {
+      color: #ff8c00 !important;
+    }
+    .header-title {
+      font-size: 40px;
+      line-height: 1;
+      color: #000;
+    }
+    .header-subtitle {
+      font-size: 10px;
+      color: #827f96;
+      letter-spacing: 0.2em;
+      font-weight: 600;
+      margin-top: 0.25rem;
+    }
+    .social-icons a {
+      font-size: 10px;
+      color: #333;
+      margin: 0 0.3rem;
+    }
+    .social-icons a:hover {
+      color: #ff8c00;
+    }
+    .search-input {
+      font-size: 10px;
+      color: #999;
+      border: none;
+      background: transparent;
+      outline: none;
+      box-shadow: none;
+    }
+    .search-input::placeholder {
+      color: #999;
+    }
+    .search-btn {
+      color: #999;
+      font-size: 12px;
+      background: transparent;
+      border: none;
+    }
+    .search-btn:hover {
+      color: #ff8c00;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+    }
+    .label-travel {
+      background-color: #ff8c00;
+      color: white;
+      font-weight: 600;
+      font-size: 0.75rem;
+      padding: 0.15rem 1rem;
+      border-radius: 0.25rem;
+      user-select: none;
+      display: inline-block;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .date-text {
+      color: #ff8c00;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .post-by {
+      color: #ff8c00;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .content-text {
+      font-size: 0.75rem;
+      line-height: 1.4;
+      color: #424242;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .social-icons a {
+      color: #4a4a4a;
+      font-size: 1.25rem;
+      margin: 0 0.75rem;
+      transition: color 0.3s ease;
+    }
+    .social-icons a:hover {
+      color: #ff8c00;
+      text-decoration: none;
+    }
+    .btn-custom {
+      background-color: #ff8c00;
+      color: white;
+      font-weight: 600;
+      font-size: 0.875rem;
+      border: none;
+      padding: 0.375rem 1.25rem;
+      border-radius: 0.25rem;
+      transition: background-color 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #424242;
+      color: white;
+    }
+    .recommendation-card {
+      font-size: 0.75rem;
+      color: #6b6b6b;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .recommendation-card a {
+      color: inherit;
+      text-decoration: none;
+      display: block;
+      transition: color 0.3s ease;
+    }
+    .recommendation-card a:hover {
+      color: #ff8c00;
+      text-decoration: underline;
+    }
+    .comment-section {
+      font-size: 0.75rem;
+      color: #6b6b6b;
+      font-family: 'Open Sans', sans-serif;
+    }
+    .comment {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .comment .comment-author {
+      font-weight: 600;
+      color: #ff8c00;
+    }
+    .comment .comment-date {
+      font-size: 0.65rem;
+      color: #a7a7a7;
+    }
+    .comment .comment-text {
+      margin-top: 0.25rem;
+      color: #4a4a4a;
+    }
+    .highlight-image {
+      width: 100%;
+      height: 380px; 
+      object-fit: cover;
+    }
+  </style>
+ </head>
+ <body>
+
+    <div class="container py-5">
+        
+        <header class="text-center mb-5">
+         <h1 class="header-title">
+          Deppy Blog
+         </h1>
+         <p class="header-subtitle">
+          PERSONAL BLOG PUNYA DEPPY
+         </p>
+         <div class="social-icons d-flex justify-content-center mt-2">
+          <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a aria-label="Twitter" href="#"><i class="fab fa-twitter"></i></a>
+          <a aria-label="Pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
+          <a aria-label="Vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
+          <a aria-label="LinkedIn" href="#"><i class="fab fa-linkedin-in"></i></a>
+         </div>
+        </header>
+ 
+        <nav class="bg-white rounded shadow-sm mb-5">
+         <ul class="nav justify-content-center py-3">
+          <li class="nav-item">
+           <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">Contact</a>
+          </li>
+         </ul>
+         <div class="border-top border-2 border-light px-4 py-2 d-flex justify-content-center align-items-center gap-2">
+          <input aria-label="Search" class="search-input flex-grow-1" placeholder="Search and hit enter..." type="text"/>
+          <button aria-label="Search" class="search-btn" type="button"><i class="fas fa-search"></i></button>
+         </div>
+        </nav>
+
+  <div class="container max-w-75 my-5">
+   <div class="d-flex justify-content-center">
+    <div class="label-travel">
+        Pemandangan
+    </div>
+   </div>
+   <p class="text-center date-text mt-3 mb-1">
+    29 April 2025
+   </p>
+   <h1 class="text-center text-secondary fw-normal" style="font-family: 'Playfair Display', serif; font-size: 1.5rem; letter-spacing: 0.05em;">
+    TEBING DI LAUTAN YANG LUAS
+   </h1>
+   <p class="text-center post-by mb-4">
+    Post by DEPPY
+   </p>
+   <hr/>
+   <p class="content-text">
+    Sed ut mauris tristique, vehicula tellus in, fringilla ligula. Phasellus dignissim est sed egestas fringilla. Vivamus egestas nec dolor vitae egestas. Nulla a ante odio. Vestibulum lobortis tincidunt nullam non varius. Fusce ornare, ante nec ullamcorper scelerisque, nisl erat sollicitudin lacus, ac sodales ligula sem eu risus. Fusce laoreet interdum eros, nec finibus mi rutrum eu.
+   </p>
+   <p class="content-text">
+    Nulla at sem in nisi pulvinar porta consequat a quam. Proin vehicula placerat est, vulputate dapibus elit scelerisque sit amet. Sed at condimentum justo, accumsan molestie ligula. Phasellus porttitor urna sit amet lorem rutrum luctus ut molestie nulla. Nulla facilisi. Pellentesque quis nibh ut arcu bibendum tincidunt.
+   </p>
+   <div class="mb-4">
+    <img class="highlight-image" src="https://storage.googleapis.com/a1aa/image/b3a8900d-8ec5-4fe5-fe5a-1fbddca24273.jpg"/>
+   </div>
+   <p class="content-text mb-4">
+    Nullam tristique massa faucibus, sodales sapien ac, tincidunt dolor. Quisque ut lobortis lectus, non suscipit ante. Duis lectus metus, consequat vitae ante et, ullamcorper scelerisque nisl.
+   </p>
+   <p class="content-text mb-4">
+    Nullam tristique massa faucibus, sodales sapien ac, tincidunt dolor. Quisque ut lobortis lectus, non suscipit ante. Phasellus at aliquet velit. Donec in dui vitae tellus sodales dapibus non quis libero. Quisque nec tortor ac ligula sagittis rutrum in a felis.
+   </p>
+   <p class="content-text mb-4">
+    Vestibulum at justo ante. Fusce finibus pretium aliquam. Sed pharetra purus at augue faucibus sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+   </p>
+   <p class="content-text">
+    Quisque euismod sapien vel neque tincidunt vulputate. Duis nulla elit, mollis eu fringilla euinterdum vel libero. Phasellus quis felis tempor, vulputate justo quis, ullamcorper nisi.
+   </p>
+   <div class="d-flex justify-content-center mt-5 social-icons">
+    <a aria-label="Facebook" href="#">
+     <i class="fab fa-facebook-f">
+     </i>
+    </a>
+    <a aria-label="Twitter" href="#">
+     <i class="fab fa-twitter">
+     </i>
+    </a>
+    <a aria-label="Pinterest" href="#">
+     <i class="fab fa-pinterest-p">
+     </i>
+    </a>
+    <a aria-label="Vimeo" href="#">
+     <i class="fab fa-vimeo-v">
+     </i>
+    </a>
+    <a aria-label="LinkedIn" href="#">
+     <i class="fab fa-linkedin-in">
+     </i>
+    </a>
+   </div>
+ 
+   <div class="d-flex justify-content-center gap-3 mt-5 flex-wrap">
+    <button class="btn btn-custom d-flex align-items-center gap-2" type="button">
+     <i class="fas fa-share-alt">
+     </i>
+     Share
+    </button>
+   </div>
+
+   <div class="d-flex justify-content-between mt-4 flex-wrap gap-3">
+    <button class="btn btn-custom d-flex align-items-center gap-2" type="button">
+     <i class="fas fa-arrow-left">
+     </i>
+     Artikel Sebelumnya
+    </button>
+    <button class="btn btn-custom d-flex align-items-center gap-2" type="button">
+     Artikel Selanjutnya
+     <i class="fas fa-arrow-right">
+     </i>
+    </button>
+   </div>
+
+   <div class="mt-5">
+    <h5 class="text-secondary fw-normal mb-3" style="font-family: 'Playfair Display', serif; font-size: 1.25rem; letter-spacing: 0.05em;">
+     Rekomendasi Artikel Lainnya
+    </h5>
+    <div class="row g-3">
+     <div class="col-12 col-md-4 recommendation-card">
+      <a href="#" aria-label="Menikmati Keindahan Pantai">
+       <div class="card border-0">
+        <img alt="Rekomendasi artikel 1: pemandangan pantai dengan perahu" class="card-img-top" height="200" src="https://storage.googleapis.com/a1aa/image/d3b122f8-52e6-4039-8f81-e8f8de757364.jpg" width="400"/>
+        <div class="card-body p-2">
+         <h6 class="card-title mb-1">
+          Menikmati Keindahan Pantai
+         </h6>
+         <p class="card-text text-muted mb-0" style="font-size: 0.7rem;">
+          Artikel singkat tentang pantai dan liburan.
+         </p>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="col-12 col-md-4 recommendation-card">
+      <a href="#" aria-label="Petualangan di Pegunungan">
+       <div class="card border-0">
+        <img alt="Rekomendasi artikel 2: gunung dan danau" class="card-img-top" height="200" src="https://storage.googleapis.com/a1aa/image/e59ad909-c8b8-4c8b-2d89-5f6be48021f9.jpg" width="400"/>
+        <div class="card-body p-2">
+         <h6 class="card-title mb-1">
+          Petualangan di Pegunungan
+         </h6>
+         <p class="card-text text-muted mb-0" style="font-size: 0.7rem;">
+          Tips hiking dan camping di pegunungan.
+         </p>
+        </div>
+       </div>
+      </a>
+     </div>
+     <div class="col-12 col-md-4 recommendation-card">
+      <a href="#" aria-label="Wisata Kota Modern">
+       <div class="card border-0">
+        <img alt="Rekomendasi artikel 3: kota dengan gedung pencakar langit" class="card-img-top" height="200" src="https://storage.googleapis.com/a1aa/image/8260b3b6-21c6-44e9-1309-8ad72c0d524c.jpg" width="400"/>
+        <div class="card-body p-2">
+         <h6 class="card-title mb-1">
+          Wisata Kota Modern
+         </h6>
+         <p class="card-text text-muted mb-0" style="font-size: 0.7rem;">
+          Jelajahi kota dan budaya urban.
+         </p>
+        </div>
+       </div>
+      </a>
+     </div>
+    </div>
+   </div>
+ 
+   <div class="mt-5 comment-section">
+    <h5 class="text-secondary fw-normal mb-3" style="font-family: 'Playfair Display', serif; font-size: 1.25rem; letter-spacing: 0.05em;">
+     Komentar Pengunjung
+    </h5>
+    <div class="comment">
+     <div class="comment-author">
+      Andi
+     </div>
+     <div class="comment-date">
+      12 Juni 2023
+     </div>
+     <div class="comment-text">
+      Artikel yang sangat informatif dan menarik. Terima kasih sudah berbagi!
+     </div>
+    </div>
+    <div class="comment">
+     <div class="comment-author">
+      Sari
+     </div>
+     <div class="comment-date">
+      15 Juni 2023
+     </div>
+     <div class="comment-text">
+      Foto-fotonya sangat indah, membuat saya ingin segera berkunjung.
+     </div>
+    </div>
+    <div class="comment">
+     <div class="comment-author">
+      Budi
+     </div>
+     <div class="comment-date">
+      18 Juni 2023
+     </div>
+     <div class="comment-text">
+      Tulisan yang mudah dipahami dan sangat membantu untuk persiapan liburan saya.
+     </div>
+    </div>
+   </div>
+
+   <div class="mt-4 mb-5">
+    <h5 class="text-secondary fw-normal mb-3" style="font-family: 'Playfair Display', serif; font-size: 1.25rem; letter-spacing: 0.05em;">
+     Tulis Komentar Anda
+    </h5>
+    <form>
+     <div class="mb-3">
+      <label class="form-label" for="nameInput" style="font-size: 0.75rem; color: #6b6b6b;">
+       Nama
+      </label>
+      <input class="form-control form-control-sm" id="nameInput" placeholder="Masukkan nama Anda" required="" style="font-size: 0.75rem;"/>
+     </div>
+     <div class="mb-3">
+      <label class="form-label" for="commentInput" style="font-size: 0.75rem; color: #6b6b6b;">
+       Komentar
+      </label>
+      <textarea class="form-control form-control-sm" id="commentInput" placeholder="Tulis komentar Anda di sini" required="" rows="3" style="font-size: 0.75rem;"></textarea>
+     </div>
+     <button class="btn btn-custom" type="submit">
+      Kirim Komentar
+     </button>
+    </form>
+   </div>
+  </div>
+  <script crossorigin="anonymous" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+  </script>
+ </body>
+</html>
